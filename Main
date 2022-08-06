@@ -29,3 +29,4 @@ while s is True:
     same = input('Would you like to use the answer for your next equation? y or n \n')
     if same == 'y':
         first = ans
+    else: first = int(input('What is the first number?\n')) 
