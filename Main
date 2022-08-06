@@ -16,8 +16,8 @@ def op(n1,oper,n2):
         return div(n1,n2)
     elif oper == '*':
         return mul(n1,n2)
+first = int(input('What is the first number?\n'))       
 while s is True:
-    first = int(input('What is the first number?\n'))
     print('+\n-\n*\n/')
     operation = input('Pick an operation:\n')
     next = int(input('What is the next number?\n'))
@@ -26,3 +26,6 @@ while s is True:
     again = input('Would you like to solve another equation? y or n \n')
     if again == 'n':
         s = False
+    same = input('Would you like to use the answer for your next equation? y or n \n')
+    if same == 'y':
+        first = ans
