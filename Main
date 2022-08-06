@@ -1,0 +1,28 @@
+s = True
+def add(n11,n12):
+    return n11 + n12
+def sub(n11,n12):
+    return n11 - n12
+def div(n11,n12):
+    return n11 / n12
+def mul(n11,n12):
+    return n11*n12
+def op(n1,oper,n2):
+    if oper == '+':
+        return add(n1,n2)
+    elif oper == '-':
+        return sub(n1,n2)
+    elif oper == '/':
+        return div(n1,n2)
+    elif oper == '*':
+        return mul(n1,n2)
+while s is True:
+    first = int(input('What is the first number?\n'))
+    print('+\n-\n*\n/')
+    operation = input('Pick an operation:\n')
+    next = int(input('What is the next number?\n'))
+    ans = op(first, operation, next)
+    print(f'{first} {operation} {next} = {ans}')
+    again = input('Would you like to solve another equation? y or n \n')
+    if again == 'n':
+        s = False
